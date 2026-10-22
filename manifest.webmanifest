@@ -1,0 +1,12 @@
+{
+  "name": "Arvexis",
+  "short_name": "Arvexis",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0506",
+  "theme_color": "#0a0506",
+  "icons": [
+    { "src": "assets/img/favicon.png", "sizes": "256x256", "type": "image/png" },
+    { "src": "assets/img/logo.png", "sizes": "640x640", "type": "image/png" }
+  ]
+}
