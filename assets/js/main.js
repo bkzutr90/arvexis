@@ -8,7 +8,7 @@ const CONFIG = {
 
   // Anggota tim kompetitif: id = Roblox user ID (angka di link profil roblox.com/users/ANGKA/profile)
   // contoh: [{ id: 123456789, role: "Captain" }, { id: 987654321, role: "Killer main" }]
-  team: [],
+  team: [{ id: 10013979972, role: "Survivor" }],
 };
 // =======================================
 
