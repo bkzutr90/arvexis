@@ -31,9 +31,9 @@
       <a href="#galeri">Galeri</a>
       <a href="#event">Event</a>
       <a href="#tim">Tim</a>
-      <a href="#aturan">Aturan</a>
+      <a href="#aturan">Rules</a>
       <a href="#faq">FAQ</a>
-      <a class="btn btn-small" data-discord href="#">Discord</a>
+      <a class="btn btn-small" data-discord href="https://discord.gg/mUshYXTfqu">Discord</a>
     </nav>
   </header>
 
@@ -41,10 +41,10 @@
     <section class="hero" id="beranda">
       <div class="wrap hero-grid">
         <div class="hero-text">
-          <h1>Komunitas mabar Arvexis</h1>
-          <p class="lead">Tempat main bareng, ngobrol di voice, ikut event, dan cari tim yang cocok.</p>
+          <h1>Arvexis</h1>
+          <p class="lead">Tempat main bareng, ngobrol di voice, dan ikut event.</p>
           <div class="actions">
-            <a class="btn" data-discord href="#">Gabung Discord</a>
+            <a class="btn" data-discord href="https://discord.gg/mUshYXTfqu">Gabung Discord</a>
             <a class="btn btn-ghost" href="#event">Lihat event</a>
           </div>
         </div>
@@ -60,11 +60,11 @@
     <section class="section" id="galeri">
       <div class="wrap">
         <h2>Galeri</h2>
-        <p class="muted">Cuplikan momen dari sesi mabar dan event komunitas.</p>
-        <div class="gallery" id="gallery" aria-label="Galeri foto mabar"></div>
+        <p class="muted">Cuplikan momen dari sesi mabar.</p>
+        <div class="carousel gallery" id="gallery" aria-label="Galeri foto mabar"></div>
         <div class="gal-nav">
-          <button class="gal-btn" data-gal="-1" aria-label="Foto sebelumnya">&larr;</button>
-          <button class="gal-btn" data-gal="1" aria-label="Foto berikutnya">&rarr;</button>
+          <button class="gal-btn" data-for="gallery" data-dir="-1" aria-label="Sebelumnya">&larr;</button>
+          <button class="gal-btn" data-for="gallery" data-dir="1" aria-label="Berikutnya">&rarr;</button>
         </div>
       </div>
     </section>
@@ -74,13 +74,14 @@
         <div>
           <h2>Fun Match Violence District</h2>
           <p class="muted">16 tim, satu juara. Hadiah Rp250.000 untuk tim pemenang. Semua pemain wajib sudah ada di server Discord Arvexis.</p>
-          <a class="btn" data-discord href="#">Daftar lewat Discord</a>
+          <a class="btn" data-discord href="https://discord.gg/mUshYXTfqu">Daftar lewat Discord</a>
         </div>
         <ol class="timeline" aria-label="Jadwal Fun Match">
-          <li><time>20–23 Okt</time><span>Registrasi tim dibuka</span></li>
-          <li><time>23 Okt, 19.00 WIB</time><span>Technical meeting</span></li>
-          <li><time>24 Okt, 19.00 WIB</time><span>Kualifikasi 16 besar dan perempat final</span></li>
-          <li><time>25 Okt, 19.00 WIB</time><span>Semifinal dan grand final</span></li>
+          <li><time>20–22 Okt</time><span>Registrasi tim dibuka</span></li>
+          <li><time>22 Okt, 19.00 WIB</time><span>Technical meeting</span></li>
+          <li><time>23 Okt, 19.00 WIB</time><span>Kualifikasi 16 besar</span></li>
+          <li><time>24 Okt, 19.35 WIB</time><span>Quarter dan Semifinal</span></li>
+          <li><time>25 Okt, 19.00 WIB</time><span>Grand final</span></li>
         </ol>
       </div>
     </section>
@@ -88,30 +89,16 @@
     <section class="section" id="tim">
       <div class="wrap">
         <h2>Tim Arvexis</h2>
-        <p class="muted">Cari anggota atau gabung tim yang sudah ada. Latihan dulu di trial-arvexis sebelum masuk event.</p>
-        <div class="map">
-          <div><h3>Cari tim</h3><p>Tulis role kamu (survivor atau killer) di lf-team-scrim.</p></div>
-          <div><h3>Info tim</h3><p>Pengumuman dan susunan tim ada di tim-arvexis.</p></div>
-          <div><h3>Undian</h3><p>Urutan tim, map, dan killer diundi di spin-wheel.</p></div>
+        <p class="muted">Tim kompetitif Arvexis di event Violence District.</p>
+        <div class="carousel team" id="team" aria-label="Anggota tim"></div>
+        <div class="gal-nav">
+          <button class="gal-btn" data-for="team" data-dir="-1" aria-label="Sebelumnya">&larr;</button>
+          <button class="gal-btn" data-for="team" data-dir="1" aria-label="Berikutnya">&rarr;</button>
         </div>
       </div>
     </section>
 
-    <section class="section alt" id="server">
-      <div class="wrap">
-        <h2>Isi server</h2>
-        <p class="muted">Sekitar 200 member sudah bergabung. Ini channel yang akan kamu temui.</p>
-        <div class="map">
-          <div><h3>Information</h3><p>announcements, rules, welcome-bye, invite-tracker, get-role, technical-meeting</p></div>
-          <div><h3>Chat</h3><p>chat, media, check-your-level, tim-arvexis</p></div>
-          <div><h3>Area VD</h3><p>info-tournament, rules-event, register-event, maps, trial-arvexis, spin-wheel, lf-team-scrim</p></div>
-          <div><h3>Area Games</h3><p>werewolf, owo-game</p></div>
-          <div><h3>Voice</h3><p>setting-voice, create-voice, trial-cowo, trial-cewe, AFK</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="aturan">
+    <section class="section alt" id="aturan">
       <div class="wrap">
         <h2>Aturan komunitas</h2>
         <p class="muted">Supaya semua nyaman bermain.</p>
@@ -127,7 +114,7 @@
       </div>
     </section>
 
-    <section class="section alt" id="faq">
+    <section class="section" id="faq">
       <div class="wrap">
         <h2>Pertanyaan umum</h2>
         <div class="faq">
@@ -140,11 +127,11 @@
       </div>
     </section>
 
-    <section class="section" id="gabung">
+    <section class="section alt" id="gabung">
       <div class="wrap join">
         <h2>Bergabung dengan kami</h2>
         <div class="actions">
-          <a class="btn" data-discord href="#">Gabung Discord</a>
+          <a class="btn" data-discord href="https://discord.gg/mUshYXTfqu">Gabung Discord</a>
           <button class="btn btn-ghost" id="install" hidden>Install aplikasi</button>
         </div>
       </div>
@@ -153,8 +140,8 @@
 
   <footer class="footer">
     <div class="wrap">
-      <span>&copy; <span id="year">2026</span> Arvexis. Komunitas mabar Indonesia.</span>
-      <a data-discord href="#">Discord</a>
+      <span>&copy; <span id="year">2026</span> Arvexis. by Ferrsyz</span>
+      <a data-discord href="https://discord.gg/mUshYXTfqu">Discord</a>
     </div>
   </footer>
 
