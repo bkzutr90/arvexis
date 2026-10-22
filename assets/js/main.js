@@ -2,8 +2,9 @@
 const CONFIG = {
   // Ganti dengan link invite server Discord Arvexis kamu
   discordUrl: "https://discord.gg/GANTI-LINK-INVITE",
-  // Foto galeri: taruh file di assets/img/gallery/ lalu tulis path-nya di sini
-  gallery: ["assets/img/banner.jpg", "assets/img/logo.png"],
+  // Foto galeri: taruh foto mabar di assets/img/gallery/ lalu tulis path-nya di sini
+  // contoh: ["assets/img/gallery/mabar-1.jpg", "assets/img/gallery/mabar-2.jpg"]
+  gallery: [],
 };
 // =======================================
 
@@ -31,12 +32,24 @@ menu.addEventListener("click", (e) => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Galeri
-const gal = document.getElementById("gallery");
-CONFIG.gallery.forEach((src) => {
-  const img = document.createElement("img");
-  img.src = src; img.alt = "Foto komunitas Arvexis"; img.loading = "lazy";
-  gal.appendChild(img);
+const track = document.getElementById("gallery");
+const items = CONFIG.gallery.length ? CONFIG.gallery : [null, null, null];
+items.forEach((src) => {
+  if (src) {
+    const img = document.createElement("img");
+    img.src = src; img.alt = "Foto mabar Arvexis"; img.loading = "lazy";
+    track.appendChild(img);
+  } else {
+    const ph = document.createElement("div");
+    ph.className = "ph"; ph.textContent = "Foto mabar segera hadir";
+    track.appendChild(ph);
+  }
 });
+document.querySelectorAll("[data-gal]").forEach((b) =>
+  b.addEventListener("click", () =>
+    track.scrollBy({ left: Number(b.dataset.gal) * (track.firstElementChild.offsetWidth + 16), behavior: "smooth" })
+  )
+);
 
 // Tombol install aplikasi (PWA)
 let promptEvt;
